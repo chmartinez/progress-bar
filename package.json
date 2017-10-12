@@ -1,0 +1,50 @@
+{
+  "name": "progress-bar",
+  "version": "0.0.1",
+  "description": "A tiny component that shows how to use setState to update components",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean-dist": "rm -rf ./dist",
+    "lint": "eslint util src",
+    "start-win-prod": "set NODE_ENV=production",
+    "build": "yarn run clean-dist && yarn run lint && yarn run start-win-prod && `yarn bin`/babel ./src --out-dir ./dist",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chmartinez/progress-bar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chmartinez/progress-bar/issues"
+  },
+  "homepage": "https://github.com/chmartinez/progress-bar#readme",
+  "peerDependencies": {
+    "react": "^15.x",
+    "styled-jsx": "^1.x"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^3.2.12",
+    "@storybook/addon-links": "^3.2.12",
+    "@storybook/react": "^3.2.12",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "eslint": "^4.8.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "styled-jsx": "^1.0.11"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "moment": "^2.18.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  }
+}
